@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="icono">
+                <box-icon name='film' color="white" id="iconosolo" class="rotating-icon"></box-icon>CAC-Movies
+            </a>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="tendencias">Tendencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="registrarse">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="iniciar">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="espacio"></div>
+
+    <div id="parte1">
+        <h1>Peliculas y series ilimitadas<br>en un solo lugar</h1>
+        <h2>Disfruta donde quieras.<br>Cancela en cualquier momento.</h2>
+    </div>
+
+    <div id="seccionformulario" class="animate__animated animate__slideInUp animate__delay-1s">
+        <p>¿Qué estás buscando para ver?</p>
+        <form id="formulario">
+            <input type="text" placeholder="Buscar..." id="buscadorformulario">
+            <input type="submit" value="Buscar" id="botonformulario">
+        </form>
+    </div>
+
+    <div class="linea"></div>
+
+    <h3>Las tendencias de hoy</h3>
+
+    <div class="container-fluid" id="secciontendencias">
+        <div class="row" id="contenedor"></div>
+    </div>
+
+    <div id="finalseccion2">
+        <button type="button" class="btn btn-primary btn-sm" id="btnAnterior">Anterior</button>
+        <button type="button" class="btn btn-primary btn-sm" id="btnSiguiente">Siguiente</button>
+    </div>
+
+    <div class="linea"></div>
+
+    <h3>Las más aclamadas</h3>
+
+    <div class="contenedorImagenes">
+        <img src="https://image.tmdb.org/t/p/w500//f4oZTcfGrVTXKTWg157AwikXqmP.jpg" alt="Imagen 1" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//lfRkUr7DYdHldAqi3PwdQGBRBPM.jpg" alt="Imagen 2" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="Imagen 3" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//74hLDKjD5aGYOotO6esUVaeISa2.jpg" alt="Imagen 4" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Imagen 5" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//8VG8fDNiy50H4FedGwdSVUPoaJe.jpg" alt="Imagen 6" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//q719jXXEzOoYaps6babgKnONONX.jpg" alt="Imagen 7" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//arw2vcBveWOVZr6pxd9XTd1TdQa.jpg" alt="Imagen 8" class="aclamadas">
+        <img src="https://image.tmdb.org/t/p/w500//bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg" alt="Imagen 9" class="aclamadas">
+    </div>
+
+    <div id="foot">
+        <a class="textopie">Terminos y condiciones</a>
+        <a class="textopie">Preguntas frecuentes</a>
+        <a class="textopie">Ayuda</a>
+        <a class="textopie" id="administradorpeliculas">Administrador Peliculas</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

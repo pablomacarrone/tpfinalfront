@@ -1,0 +1,217 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(135, 19, 19) !important; 
+    margin: 0;
+    padding: 0;
+}
+
+#espacio {
+    height: 70px;
+}
+
+.nav-link {
+    color: white !important;
+    text-align: center;
+}
+
+#icono:hover {
+    animation: rotateAnimation 0.1s infinite alternate;
+}
+
+#iconosolo {
+    transform: translateY(+14%);
+}
+
+#tendencias, #registrarse {
+    display: inline-block;
+    transition: padding 0.3s, border 0.3s;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+#tendencias:hover, #registrarse:hover {
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 8px 13px;
+}
+
+#iniciar {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#iniciar:hover {
+    background-color: brown;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#parte1 {
+    background-image: url(https://media.c5n.com/p/d19821954a253ac8168a1dcf645d6165/adjuntos/326/imagenes/000/258/0000258768/1200x675/smart/personas-viendo-serie.png);
+    color: white;
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 10%;
+    margin-top: 70px; 
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#seccionformulario {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    padding-top: 2%;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+
+#formulario {
+    font-size: 90%;
+}
+
+#botonformulario {
+    border-radius: 20px;
+    text-align: center;
+}
+
+#buscadorformulario {
+    border-radius: 20px;
+    padding-left: 2%;
+}
+
+.linea {
+    border-bottom: 1px solid brown;
+    margin: 20px 5%;
+}
+
+h3 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#secciontendencias {
+    text-align: center;
+}
+
+#finalseccion2 {
+    margin: 5%;
+    text-align: center;
+}
+
+.btn-primary {
+    padding: 16px;
+    margin: 10px;
+    border-radius: 10%;
+    background-color: brown;
+    color: white;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    padding: 14px;
+    font-size: 14px;
+    background-color: brown;
+    border-color: rgb(194, 194, 194);
+}
+
+.contenedorImagenes {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.contenedorImagenes img {
+    display: inline-block;
+    margin-right: 10px;
+    height: 200px;
+}
+
+.aclamadas {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+#foot {
+    background-color: brown;
+    padding: 25px;
+    text-align: center;
+}
+
+.textopie {
+    padding: 2%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#administradorpeliculas {
+    background-color: black;
+}
+
+.pelicula {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulos {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.descripcion {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    #seccionformulario {
+        font-size: 150%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    #espacio {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .textopie {
+        display: inline-block;
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg); 
+    }
+}
+
+.rotating-icon:hover {
+    animation: rotateAnimation 0.1s infinite alternate; 
+}
